@@ -1,4 +1,6 @@
 //O(n log n)
+
+console.time('TIME')
 function quickSort(array) {
   if (array.length < 2) {
     return array;
@@ -22,3 +24,4 @@ function quickSort(array) {
 
   return quickSort(less).concat(pivot, quickSort(greater));
 }
+console.timeEnd('TIME')
